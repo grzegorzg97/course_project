@@ -8,8 +8,8 @@ import { Subject } from "rxjs";
 export class RecipeService {
 
     recipesChanged = new Subject<Recipe[]>();
-
-    recipes: Recipe[] = [
+    private recipes: Recipe[] = [];
+   /*  recipes: Recipe[] = [
         new Recipe('A test recipe',
          'This is a test',
          'https://hips.hearstapps.com/hmg-prod/images/crepes-lead-64347419487e4.jpg?crop=0.9995238095238095xw:1xh;center,top&resize=980:*',
@@ -24,7 +24,7 @@ export class RecipeService {
             new Ingredient('Buns', 2),
             new Ingredient('Meat', 1)
          ])
-      ];
+      ]; */
       
 
       constructor(private slService:ShoppingListService) { 
