@@ -7,6 +7,7 @@
             <p>{{error}}</p>
         </div> -->
        <!--  <app-alert [message]="error" *ngIf="error" (close) = "onHandleError()" ></app-alert> -->
+       <ng-template appPlaceholder></ng-template>
         <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" *ngIf="!isLoading">
             <div class="form-group">
                 <label for="email">Email</label>
