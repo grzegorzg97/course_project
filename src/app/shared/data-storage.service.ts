@@ -13,7 +13,6 @@ export class DataStorageService {
 
     storeRecipes() {
         const recipes = this.recipeService.getRecipes();
-        console.log(recipes);
         this.http.put('https://course-project-df3ab-default-rtdb.europe-west1.firebasedatabase.app/recipes.json', recipes)
         .subscribe(response => {
             console.log(response);
